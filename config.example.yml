@@ -1,0 +1,3 @@
+comics_root: /home/username/Comics
+allowed_origins:
+    -   example.com
