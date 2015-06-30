@@ -1,0 +1,3 @@
+[submodule "comixzap-browser-ui"]
+	path = comixzap-browser-ui
+	url = https://github.com/ComixZap/comixzap-browser-ui
