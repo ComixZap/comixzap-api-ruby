@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.com/
+  remote: https://rubygems.org/
   specs:
     backports (3.6.4)
     multi_json (1.10.1)
@@ -25,5 +25,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sinatra (~> 1.4)
-  sinatra-contrib (~> 1.4)
+  sinatra
+  sinatra-contrib

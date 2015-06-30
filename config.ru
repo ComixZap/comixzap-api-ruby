@@ -1,4 +1,8 @@
-require './app.rb'
+require './lib/comixzap/environment'
 
-app = ComixZap::MainApplication.new
+ComixZap::Environment::setup!
+
+require 'comixzap'
+
+app = ComixZap::Server.new
 run app

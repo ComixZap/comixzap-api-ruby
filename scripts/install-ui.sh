@@ -18,8 +18,7 @@ npm install
 echo '{}' > config.json
 ./node_modules/.bin/gulp build
 
-
-if [ ] ; then
+if [ ! -e "$rootdir/public" ] ; then
   ln -s "$browserfolder/dist" "$rootdir/public" 
 fi
 
