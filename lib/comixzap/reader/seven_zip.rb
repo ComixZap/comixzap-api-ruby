@@ -37,7 +37,8 @@ module ComixZap
               unless block_given?
                 i = 0
                 data.sort_by! do |f|
-                  f[:filename].scan(/[^\d\.]+|[\d\.]+/).collect { |f| f.match(/\d+(\.\d+)?/) ? f.to_f : f.downcase }
+                  sort_ary = f[:filename].split(/(\d+)/).map {|a| a =~ /\d+/ ? a.to_i : a  }
+                  sort_ary.fill(0, sort_ary.size...10)
                 end
               end
             end
