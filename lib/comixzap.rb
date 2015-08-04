@@ -4,4 +4,5 @@ module ComixZap
   autoload :Stream,       'comixzap/stream'
   autoload :Server,       'comixzap/server'
   autoload :Reader,       'comixzap/reader'
+  autoload :Util,         'comixzap/util'
 end

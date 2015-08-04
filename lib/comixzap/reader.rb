@@ -22,7 +22,7 @@ module ComixZap
         end
         unless block_given?
           data.sort_by do |entry|
-            [entry[:directory] ? 0 : 1, entry[:filename].downcase]
+            [entry[:directory] ? 0 : 1] + Util.natural_sort_array(entry[:filename])
           end
         end
       end
